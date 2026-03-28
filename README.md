@@ -7,7 +7,7 @@
 
 <hr>
 
-This simple piece of code shows the effect of the sampling rate on a signal reconstruction and the phenomenon of aliasing for sample rates smaller the Nyquist Rate.
+This simple piece of code shows the effect of the sampling rate on a signal reconstruction and the phenomenon of aliasing for sample rates smaller than the Nyquist Rate.
 
 <p align="center">
   <img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/29690fdc-43fc-415a-b4eb-8369cc47b3f1" />
