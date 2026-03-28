@@ -7,7 +7,7 @@ domain_length = 5*(2*np.pi)  # 5 periods
 max_frequency = 2*np.pi
 
 nyquist_rate = 2 * (1/max_frequency) * domain_length
-nyquist_rate = int(np.ceil(nyquist_rate))
+nyquist_rate = int(np.floor(nyquist_rate+1))
 
 
 fig, axs = plt.subplots(4, 1, constrained_layout=True)  # constrained_layout to prevent overlap
@@ -50,7 +50,7 @@ axs[2].set_xlabel('nyquist rate (technically minimum)')
 
 # under nyquist rate (undersampled, aliased)
 
-x = np.linspace(0, domain_length, int(0.8*nyquist_rate))
+x = np.linspace(0, domain_length, int(0.9*nyquist_rate))
 y = np.sin(x)
 
 axs[3].plot(x, y, marker='.')
